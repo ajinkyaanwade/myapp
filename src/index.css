@@ -11,3 +11,34 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+div{
+  font-size: 10px;
+  margin-top:80px;
+  color: blue;
+  animation: myanim 4s infinite,rotate 10s infinite,slideIn 4s;
+}
+@keyframes myanim{
+  0%{color: aqua;}
+  25%{color: rgb(232, 137, 13);}
+  50%{color: rgb(9, 243, 36);}
+  75%{color: rgb(240, 76, 166);}
+  100%{color: rgb(208, 242, 54);} 
+}
+@keyframes rotate{
+  0%{transform: rotate(0deg);}
+  100%{transform: rotate(360deg);}
+}
+@keyframes slideIn {
+  to {
+    transform: translateY(0%);
+  }
+}
+
+/* Apply different delay for each character */
+.split-text span:nth-child(1) {
+  animation-delay: 0s;
+}
+
+.split-text span:nth-child(2) {
+  animation-delay: 0.1s;
+}
